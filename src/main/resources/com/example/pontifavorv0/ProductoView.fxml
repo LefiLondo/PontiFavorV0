@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="346.0" prefWidth="450.0" style="-fx-background-color: #e6c6f7;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pontifavorv0.ProductController">
+   <AnchorPane fx:id="PCr" prefHeight="58.0" prefWidth="450.0" style="-fx-background-color: #764491;">
+      <children>
+          <Label fx:id="RestaurantName" layoutX="32.0" layoutY="20.0" text="Cosechas" textFill="WHITE">
+            <font>
+               <Font size="18.0" />
+            </font></Label>
+         <ImageView fx:id="carrito" fitHeight="68.0" fitWidth="77.0" layoutX="346.0" layoutY="4.0" onMouseClicked="#PantCarrito" pickOnBounds="true" preserveRatio="true">
+            <image>
+            
+                <Image url="@../../../imagenes/carro.jpg" />
+
+            </image>
+         </ImageView>
+      </children>
+   </AnchorPane>
+   <AnchorPane fx:id="PCr2" layoutX="34.0" layoutY="93.0" prefHeight="200.0" prefWidth="348.0">
+      <children>
+          <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" prefHeight="323.0" prefWidth="382.0" vbarPolicy="AS_NEEDED">
+              <VBox prefHeight="257.0" prefWidth="332.0" spacing="10.0" style="-fx-background-color: #e6c6f7;">
+                  <HBox alignment="CENTER_RIGHT" spacing="10.0">
+                  <ImageView fx:id="img1" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../imagenes/Colibrí%20morado.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="O1" prefHeight="18.0" prefWidth="189.0" text="Colibrí Morado" />
+                      <VBox spacing="5.0">
+                     <Label fx:id="L1" text="9900" />
+                          <Button fx:id="B1" alignment="CENTER_RIGHT" onMouseClicked="#GetCarrito1" prefHeight="26.0" prefWidth="130.0" style="-fx-background-color: #f7a1b8;" text="Añadir al carrito" />
+                      </VBox>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" spacing="10.0">
+                      <ImageView fx:id="img2" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../imagenes/verde%20fit.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="O2" prefHeight="18.0" prefWidth="189.0" text="Verde Fit" />
+                      <VBox spacing="5.0">
+                     <Label fx:id="L2" text="6900" />
+                          <Button fx:id="B2" alignment="CENTER_RIGHT" onMouseClicked="#GetCarrito2" prefHeight="26.0" prefWidth="137.0" style="-fx-background-color: #f7a1b8;" text="Añadir al carrito" />
+                      </VBox>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="67.0" prefWidth="310.0" spacing="10.0">
+                      <ImageView fx:id="img3" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../imagenes/fresa-guanabana3.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="O3" prefHeight="18.0" prefWidth="189.0" text="Fresa Guanabana" />
+                      <VBox spacing="5.0">
+                     <Label fx:id="L3" text="9900" />
+                          <Button fx:id="B3" alignment="CENTER_RIGHT" onMouseClicked="#GetCarrito3" prefHeight="26.0" prefWidth="141.0" style="-fx-background-color: #f7a1b8;" text="Añadir al carrito" />
+                      </VBox>
+                  </HBox>
+                  <!-- ... add more items here ... -->
+              </VBox>
+          </ScrollPane>
+      </children>
+   </AnchorPane>
+   <AnchorPane fx:id="Cr" layoutY="8.0" prefHeight="408.0" prefWidth="450.0" visible="false">
+      <children>
+         <ListView fx:id="ListaCarrito" layoutX="72.0" layoutY="56.0" prefHeight="323.0" prefWidth="305.0" />
+         <Button fx:id="botonvolver" layoutX="26.0" layoutY="21.0" mnemonicParsing="false" onMouseClicked="#PantProductos" style="-fx-background-color: #f7a1b8;" text="Volver" />
+         <Label layoutX="378.0" layoutY="313.0" prefHeight="18.0" prefWidth="50.0" text="TOTAL" />
+         <Label fx:id="tot" layoutX="378.0" layoutY="352.0" />
+      </children>
+   </AnchorPane>
+</AnchorPane>

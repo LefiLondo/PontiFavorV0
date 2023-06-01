@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="Grande" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="450.0" style="-fx-background-color: #e6c6f7;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pontifavorv0.HelloController">
+   <children>
+      <AnchorPane fx:id="BarraSuperior" prefHeight="60.0" prefWidth="450.0" style="-fx-background-color: #764491;" AnchorPane.bottomAnchor="340.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox layoutX="6.0" layoutY="10.0" prefHeight="43.0" prefWidth="435.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <ImageView fx:id="IniciarSesion" fitHeight="64.0" fitWidth="64.0" onMouseClicked="#iniciarSesion" pickOnBounds="true" preserveRatio="true">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <image>
+                        <Image url="C:\Users\anaso\OneDrive\Escritorio\PontiFavorV0\src\main\Imagenes\Pontifavor4.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Separator prefWidth="200.0" visible="false" />
+                  <ImageView fx:id="Registrarse" fitHeight="64.0" fitWidth="64.0" onMouseClicked="#registrarse" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="C:\Users\anaso\OneDrive\Escritorio\PontiFavorV0\src\main\Imagenes\Pontifavor2.jpeg" />
+                     </image>
+                  </ImageView>
+                  <Separator prefWidth="200.0" visible="false" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="PanelIniciarSesion" layoutX="10.0" layoutY="80.0" prefHeight="330.0" prefWidth="450.0" style="-fx-background-color: #e6c6f7;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+         <children>
+            <JFXTextArea fx:id="TextoUserIniciar" layoutX="203.0" layoutY="131.0" prefHeight="21.0" prefWidth="170.0" unFocusColor="#a19d9d" />
+            <JFXTextArea fx:id="TextoContraseñaIniciar" layoutX="203.0" layoutY="201.0" prefHeight="21.0" prefWidth="170.0" unFocusColor="#a19d9d" />
+            <Label layoutX="94.0" layoutY="135.0" text="Usuario">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="206.0" text="Contraseña">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="16.0" />
+               </font>
+            </Label>
+            <Button fx:id="BotonIniciarSesion" layoutX="179.0" layoutY="263.0" mnemonicParsing="false" onMouseClicked="#lecturainiciarSesion" style="-fx-background-color: #fc5b73;" text="Iniciar Sesión">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="12.0" />
+               </font></Button>
+            <ImageView fx:id="MuñecoInicioSesion" fitHeight="56.0" fitWidth="86.0" layoutX="71.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="231.0" AnchorPane.leftAnchor="71.0" AnchorPane.rightAnchor="293.0" AnchorPane.topAnchor="43.0">
+               <image>
+                  <Image url="C:\Users\anaso\OneDrive\Escritorio\PontiFavorV0\src\main\Imagenes\Pontifavor3.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PontiFavorInicioSesion" fitHeight="60.0" fitWidth="241.0" layoutX="147.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="227.0" AnchorPane.leftAnchor="147.0" AnchorPane.rightAnchor="62.0" AnchorPane.topAnchor="43.0">
+               <image>
+                  <Image url="C:\Users\anaso\OneDrive\Escritorio\PontiFavorV0\src\main\Imagenes\Pontifavor1.jpeg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="PanelRegistrarse" layoutY="70.0" prefHeight="330.0" prefWidth="450.0" style="-fx-background-color: #e6c6f7;" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+         <children>
+            <Label layoutX="119.0" layoutY="116.0" text="Usuario">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="114.0" layoutY="152.0" text="Telefono">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="94.0" layoutY="188.0" text="Contraseña">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="90.0" layoutY="236.0" text="Tipo usuario">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="16.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="ComboBoxTipoUser" layoutX="205.0" layoutY="237.0" prefWidth="150.0" promptText="Tipo usuario" style="-fx-background-color: #f7a1b8;" />
+            <JFXTextArea fx:id="TextoUser" layoutX="205.0" layoutY="106.0" prefHeight="19.0" prefWidth="162.0" unFocusColor="#a19d9d" AnchorPane.leftAnchor="205.0" AnchorPane.rightAnchor="83.0" />
+            <JFXTextArea fx:id="TextoPhone" layoutX="205.0" layoutY="142.0" prefHeight="19.0" prefWidth="162.0" unFocusColor="#a19d9d" />
+            <JFXTextArea fx:id="TextoContraseña" layoutX="205.0" layoutY="178.0" prefHeight="19.0" prefWidth="162.0" unFocusColor="#a19d9d" />
+            <Button fx:id="BotonRegistro" layoutX="180.0" layoutY="279.0" mnemonicParsing="false" onMouseClicked="#setBotonRegistro" style="-fx-background-color: #fc5b73;" text="Registrarse">
+               <font>
+                  <Font name="Lucida Sans Unicode" size="12.0" />
+               </font></Button>
+            <ImageView fx:id="MuñecoRegistro" fitHeight="56.0" fitWidth="86.0" layoutX="11.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="231.0" AnchorPane.leftAnchor="71.0" AnchorPane.rightAnchor="301.43" AnchorPane.topAnchor="43.0">
+               <image>
+                  <Image url="C:\Users\anaso\OneDrive\Escritorio\PontiFavorV0\src\main\Imagenes\Pontifavor3.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="PontiFavorRegistro" fitHeight="60.0" fitWidth="241.0" layoutX="135.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="231.28721618652344" AnchorPane.leftAnchor="135.0" AnchorPane.rightAnchor="74.0" AnchorPane.topAnchor="43.0">
+               <image>
+                  <Image url="C:\Users\anaso\OneDrive\Escritorio\PontiFavorV0\src\main\Imagenes\Pontifavor1.jpeg" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
